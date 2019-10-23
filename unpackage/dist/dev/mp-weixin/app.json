@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/index/demoIndex",
     "pages/index/index",
-    "pages/index/about/about/about"
+    "pages/about/about",
+    "pages/info/info"
   ],
   "subPackages": [],
   "window": {
@@ -9,18 +11,6 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F0AD4E",
     "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "color": "#0066CC",
-    "selectedColor": "#6D6D72",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "static/image/icon_component.png",
-        "selectedIconPath": "static/image/icon_component_HL.png",
-        "text": "组件"
-      }
-    ]
   },
   "usingComponents": {}
 }

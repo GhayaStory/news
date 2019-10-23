@@ -14,12 +14,5 @@
 
 <style>
 	/*每个页面公共css */
-	.red{color:#FF0000}
-	page,
-	view{
-		
-	}
-	page{
-		
-	}
+	/* @import url("./common/uni.css"); */
 </style>
