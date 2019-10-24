@@ -122,7 +122,12 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _this = void 0; //
+//
+//
+//
+//
+//
 //
 //
 //
@@ -135,13 +140,21 @@ var _default =
 {
   data: function data() {
     return {
-      title: 'Hello...23' };
+      index: 0,
+      yearText: "请选择年份",
+      years: [1993, 1994, 1995, 1996, 1997],
+      title: 'About...' };
 
   },
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    dateChange: function dateChange(e) {
+      console.log(e);
+      var index = e.target.value;
+      _this.yearText = _this.years[index];
+    } } };exports.default = _default;
 
 /***/ }),
 

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/demoIndex",
     "pages/index/index",
+    "pages/index/demoIndex",
     "pages/about/about",
     "pages/info/info"
   ],
@@ -12,5 +12,25 @@
     "navigationBarBackgroundColor": "#F0AD4E",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#F0AD4E",
+    "backgroundColor": "#0A98D5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/imgs/icon/1.png",
+        "selectedIconPath": "static/imgs/icon/1.png",
+        "text": "组件1"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "static/imgs/icon/2.png",
+        "selectedIconPath": "static/imgs/icon/2.png",
+        "text": "组件2"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap52.json"
 }

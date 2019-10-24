@@ -2,7 +2,7 @@
 	<view class="content">
 		<view class="title">{{title}}</view>
 		<view class="art-content">
-			<rich-text class="richText" :nodes="strings"></rich-text>
+			<rich-text class="richText" :nodes="strings">123</rich-text>
 		</view>
 	</view>
 </template>
