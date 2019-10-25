@@ -26,19 +26,25 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"name": "test1",
 					"query": "newsid=5256784",
 					"id": 0,
-					"pathName": "pages/info/info"
+					"pathName": "pages/index0/info"
 				},
 				{
-					"name": "test2",
-					"query": "newsid=5256784",
+					"name": "uni-about",
+					"query": "",
 					"id": 1,
-					"pathName": "pages/info/info"
+					"pathName": "pages/index/about"
+				},
+				{
+					"name": "uni-images",
+					"query": "",
+					"id": 2,
+					"pathName": "pages/index/images"
 				}
 			]
 		}

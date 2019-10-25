@@ -1,1 +1,0 @@
-<view class="content"><view class="text-area"><text class="title">{{title}}</text></view><view><picker value="{{index}}" range="{{years}}" data-event-opts="{{[['change',[['dateChange']]]]}}" bindchange="__e"><view>{{years[index]}}</view></picker></view></view>

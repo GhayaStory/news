@@ -21,6 +21,19 @@
 			<view>8888</view>
 			<view>9999</view>
 		</scroll-view>
+		<scroll-view class="scv" scroll-y="true">
+			<!-- 左右滚动 -->
+			<view>0000</view>
+			<view>1111</view>
+			<view>2222</view>
+			<view>3333</view>
+			<view>4444</view>
+			<view>5555</view>
+			<view>6666</view>
+			<view>7777</view>
+			<view>8888</view>
+			<view>9999</view>
+		</scroll-view>
 	</view>
 </template>
 

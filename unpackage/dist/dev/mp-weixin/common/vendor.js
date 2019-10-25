@@ -8404,7 +8404,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "uni-app" }, "pages/index/demoIndex": {}, "pages/about/about": { "navigationBarTitleText": "uni-about", "navigationBarBackgroundColor": "#7A7E83" }, "pages/info/info": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F0AD4E", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "uni-app", "usingComponents": {} }, "pages/index/about": { "navigationBarTitleText": "uni-about", "navigationBarBackgroundColor": "#7A7E83", "usingComponents": {} }, "pages/index/images": { "navigationBarTitleText": "uni-images", "usingComponents": {} }, "pages/index0/demoIndex": { "usingComponents": {} }, "pages/index0/info": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F0AD4E", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */

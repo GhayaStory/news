@@ -9,18 +9,24 @@
 			}
 		},
 		{
-		    "path" : "pages/index/demoIndex",
-		    "style" : {}
-		},
-		{
-            "path" : "pages/about/about",
+            "path" : "pages/index/about",
             "style" : {
 				"navigationBarTitleText": "uni-about",
 				"navigationBarBackgroundColor":"#7A7E83"
 			}
         },
 		{
-            "path" : "pages/info/info",
+            "path" : "pages/index/images",
+            "style" : {
+				"navigationBarTitleText": "uni-images"
+			}
+        },
+		{
+		    "path" : "pages/index0/demoIndex",
+		    "style" : {}
+		},
+		{
+            "path" : "pages/index0/info",
             "style" : {}
         }
     ],
@@ -31,17 +37,22 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"condition":{//开发临时定位页面用
-		"current":0,
+		"current":2,
 		"list":[
 			{
 				"name":"test1",
-				"path":"pages/info/info",//访问路径
+				"path":"pages/index0/info",//访问路径
 				"query":"newsid=5256784"//传值
 			},
 			{
-				"name":"test2",
-				"path":"pages/info/info",
-				"query":"newsid=5256784"
+				"name":"uni-about",
+				"path":"pages/index/about",
+				"query":""
+			},
+			{
+				"name":"uni-images",
+				"path":"pages/index/images",
+				"query":""
 			}
 		]
 	},
@@ -52,15 +63,33 @@
 		"list":[
 			{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/imgs/icon/1.png",
-				"selectedIconPath": "static/imgs/icon/1.png",
+				"iconPath": "static/imgs/icon/3.png",
+				"selectedIconPath": "static/imgs/icon/2.png",
 				"text": "组件1"
 			},
 			{
-				"pagePath": "pages/about/about",
-				"iconPath": "static/imgs/icon/2.png",
+				"pagePath": "pages/index/about",
+				"iconPath": "static/imgs/icon/3.png",
 				"selectedIconPath": "static/imgs/icon/2.png",
 				"text": "组件2"
+			},
+			{
+				"pagePath": "pages/index/images",
+				"iconPath": "static/imgs/icon/3.png",
+				"selectedIconPath": "static/imgs/icon/2.png",
+				"text": "组件3"
+			},
+			{
+				"pagePath": "pages/index/about",
+				"iconPath": "static/imgs/icon/3.png",
+				"selectedIconPath": "static/imgs/icon/2.png",
+				"text": "组件4"
+			},
+			{
+				"pagePath": "pages/index/about",
+				"iconPath": "static/imgs/icon/3.png",
+				"selectedIconPath": "static/imgs/icon/2.png",
+				"text": "组件5"
 			}
 		]
 	}
