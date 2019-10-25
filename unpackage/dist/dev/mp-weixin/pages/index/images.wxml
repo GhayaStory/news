@@ -1,0 +1,1 @@
+<view><swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"><block wx:for="{{arrStr}}" wx:for-item="item" wx:for-index="index" wx:key="*this"><swiper-item><view class="{{['imgtab uni-bg-'+arrColor[index]]}}">{{arrStr[index]}}</view></swiper-item></block></swiper></view>

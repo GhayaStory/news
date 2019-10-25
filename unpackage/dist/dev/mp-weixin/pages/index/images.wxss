@@ -1,0 +1,9 @@
+
+swiper-item{
+		background:#FFAA00;height: 2px;width: 100%;
+}
+.imgtab{
+	height: 175px;
+	padding: 5px 5px 10px 20px;
+}
+
