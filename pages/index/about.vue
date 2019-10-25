@@ -14,6 +14,23 @@
 				</view>
 			</view>
 		</view>
+		<view class="uni-title uni-common-pl">多列选择器</view>
+		<view class="uni-list">
+			<view class="uni-list-cell">
+				<view class="uni-list-cell-left">
+					当前选择
+				</view>
+				<view class="uni-list-cell-db">
+					<picker mode="multiSelector" @columnchange="cloumChange" :value="showIndex" :range="showData">
+						<view class="uni-input">
+						{{showData[showIndex[0]].name}}，
+						{{showData[showIndex[0]].value[showIndex[1]].name}}，
+						{{showData[showIndex[0]].value[showIndex[1]].value[showIndex[2]]}}
+						</view>
+					</picker>
+				</view>
+			</view>
+		</view>
 		<!-- <view>
 			<text>aaaaaaa</text>
 			<picker-view v-if="visible" :indicator-style="indicatorStyle" :value="value" @change="bindChange">
@@ -32,26 +49,11 @@
 </template>
 
 <script>
+	var allData = [];
+	var showData = [];
+	let _self;
 	export default {
 		data() {
-			let arr1 = [
-				{
-					"R1":[
-						{"1":['1','2','3','4','5']},
-						{"2":['1','2','3']},
-						{"3":['1','2','3','4','5','6']}
-					],
-				},
-				{
-					"R2":[
-						{"1":['1','2','3','4']},
-						{"2":['1','2','3']},
-						{"3":['1','2','3','4','5','6']},
-						{"4":['1','2','3','4']},
-						{"5":['1','2','3','4','5']}
-					]
-				}
-			]
 			return {
 				index:0,
 				yearText:"请选择年份",
@@ -63,16 +65,64 @@
 				equips:['yozura','star','Terraria'],
 				locals:['nihon','compare','卧槽'],
 				title: 'About...',
-				arr1:arr1
+				showIndex:[0,0,0],
+				showData:[[],[],[]]
 			}
 		},
 		onLoad() {
-
+			_self = this;
+			console.log(this);
+			console.log(this.showIndex);
+			initData();
+			function initData(){
+				allData = [
+					{
+						name:"R1",
+						value:[
+							{name:"1",value:['1','2','3','4','5']},
+							{name:"2",value:['1','2','3']},
+							{name:"3",value:['1','2','3','4','5','6']}
+						],
+					},
+					{
+						name:"R2",
+						value:[
+							{name:"1",value:['1','2','3','4']},
+							{name:"2",value:['1','2','3']},
+							{name:"3",value:['1','2','3','4','5','6']},
+							{name:"4",value:['1','2','3','4']},
+							{name:"5",value:['1','2','3','4','5']}
+						]
+					}
+				]
+				console.log(_self);
+				// let arrOne = dataToArr(allData);
+				// let arrTwo = dataToArr(allData[_self.showIndex[0]].value);
+				// let arrThree = dataToArr(allData[_self.showIndex[0]].value[_self.showIndex[1]]);
+				
+				// function dataToArr(data){
+				// 	let arr = [];
+				// 	for(let item of data){
+				// 		if(item.name){
+				// 			arr.push(item.name);
+				// 		}else{
+				// 			arr.push(item);
+				// 		}
+				// 	}
+				// 	return arr;
+				// }
+				// _self.showData = [arrOne,arrTwo,arrThree];
+				
+				// console.log(showData[this.showIndex[0]].name);
+			}
 		},
 		methods:{
 			dateChange:function(e){
 				this.index = e.target.value;
 				this.isYearText = false;
+			},
+			cloumChange:function(e){
+				console.log(e);
 			}
 		}
 	}
